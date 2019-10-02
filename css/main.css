@@ -1,0 +1,271 @@
+html {}
+
+body {
+    font-family: "Open Sans"
+}
+
+header {
+    background-color: black;
+    padding: 2rem 0;
+}
+
+.container-navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar-brand {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdownmenu ul,
+.dropdownmenu li {
+    margin: 0;
+    padding: 0;
+}
+
+.dropdownmenu ul {
+    list-style: none;
+    width: 100%;
+}
+
+.dropdownmenu li {
+    float: left;
+    position: relative;
+    width: auto;
+}
+
+.dropdownmenu a {
+    background: #30A6E6;
+    color: #FFFFFF;
+    display: block;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.dropdownmenu li:hover a {
+    background: #30A6E6;
+}
+
+.submenu {
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 35px;
+    visibility: hidden;
+    z-index: 1;
+}
+
+li:hover ul.submenu {
+    opacity: 1;
+    top: 40px;
+    visibility: visible;
+}
+
+.submenu li {
+    float: none;
+    width: 100%;
+}
+
+.submenu a:hover {
+    background: #DF4B05;
+}
+
+.submenu a {
+    background-color: #000000;
+}
+
+.call-to-action {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 3rem
+}
+
+.img-cta {
+    width: 220px;
+}
+
+.cta-content {
+    color: #fff;
+    margin-left: 5rem;
+}
+
+.cta-content p {
+    color: #fff;
+}
+
+.btn-cta {
+    background-color: #e47a04;
+    color: #fff
+}
+
+.colection {
+    background: #30A6E6;
+    padding: 3rem 0
+}
+
+.colection-item {
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.colection-item .icon-right {
+    border-right: 1px solid #fff;
+    padding: 12px
+}
+
+.colection-item-head {
+    border-bottom: 1px solid #fff;
+    padding: 10px 0;
+    margin-bottom: 20px
+}
+
+.colection-item-head i {
+    margin-right: 10px
+}
+
+.btn-colection {
+    background-color: #000000;
+    color: #fff;
+}
+
+.blog {
+    background-color: #cfc3c3;
+    padding: 2rem 0
+}
+
+.blog-sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 30px 10px;
+    border: 10px solid #cfc3c3;
+}
+
+.sidebar-post {
+    display: flex;
+    border-bottom: 1px solid red
+}
+
+.sidebar-post-img {
+    height: 50px
+}
+
+.blog-post {
+    display: flex;
+    background-color: #fff;
+    padding: 30px;
+    border: 10px solid #cfc3c3;
+}
+
+.blog-post-img {
+    height: 150px;
+}
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 30px 0
+}
+
+footer p {
+    text-align: center
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575.98px) {
+    .navbar-toggler {
+        display: block;
+        color: #fff;
+        margin-right: 30px
+    }
+    .dropdownmenu {
+        display: none
+    }
+    .call-to-action {
+        flex-direction: column;
+    }
+    .container-navbar {
+        justify-content: flex-start;
+    }
+    .colection-item {
+        display: flex;
+        flex-direction: column
+    }
+    .cta-content {
+        margin-left: 15px;
+    }
+    .blog-article {
+        margin-right: 0px;
+        margin-bottom: 20px
+    }
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .navbar-toggler {
+        display: block;
+        color: #fff;
+        margin-right: 30px
+    }
+    .dropdownmenu {
+        display: none
+    }
+    .call-to-action {
+        flex-direction: column;
+    }
+    .container-navbar {
+        justify-content: flex-start;
+    }
+    .colection-item {
+        display: flex;
+        flex-direction: column
+    }
+    .cta-content {
+        margin-left: 15px;
+    }
+    .blog-article {
+        margin-right: 0px;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .navbar-toggler {
+        display: none
+    }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .navbar-toggler {
+        display: none
+    }
+}
+
+
+/* Extra large devices (large desktops, 1200px and up)*/
+
+@media (min-width: 1200px) {
+    .navbar-toggler {
+        display: none
+    }
+}
